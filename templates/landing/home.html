@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="section-top-top">
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="section section1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="xlarge">
+                        Меню
+                    </h1>
+                </div>
+                {% for  product_image in  products_images  %}
+                    {% include 'landing/product_item.html' %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="section section2 phones-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="xlarge">
+                   
+                        Категория_2
+                    </h1>
+                </div>
+                {% for  product_image in  products_images_nouts  %}
+                    {% include 'landing/product_item.html' %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{#<div class="container">#}
+{#    <div class="section section-delivery" >#}
+{#        <div class="row">#}
+{#            <div class="fullscreen-bg">#}
+{#                <div class="overlay"></div>#}
+{#                        <video loop muted autoplay poster="{% static 'img/working/working/working.jpg'%}" class="fullscreen-bg__video">#}
+{#                            <source src="{% static 'img/working/working/working.mp4'%}" type="video/mp4">#}
+{#                            <source src="{% static 'img/working/working/working.webm'%}" type="video/webm">#}
+{#                        </video>#}
+{#                        <div class="control-label-video">#}
+{#                            <h1 class="xlarge">Эх, сделать бы что-нибудь красивое :С</h1>#}
+{#                        </div>#}
+    {#                    <video loop muted autoplay poster="{% static 'img/PhoneScroll/Snapshots/PhoneScroll.jpg'%}" class="fullscreen-bg__video">#}
+    {#                        <source src="{% static 'img/PhoneScroll/MP4/PhoneScroll.mp4'%}" type="video/mp4">#}
+    {#                        <source src="{% static 'img/PhoneScroll/WEBM/PhoneScroll.webm'%}" type="video/webm">#}
+    {#                    </video>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+{% endblock %}
+
+
