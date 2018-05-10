@@ -43,11 +43,13 @@ INSTALLED_APPS = [
     'orders',
     'products',
     'management_area',
+    'map',
     #external packages
     'django_summernote',
     'utils',
     'emails',
-    'import_export'
+    'import_export',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
